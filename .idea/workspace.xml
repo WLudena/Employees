@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="57fa5804-85ce-4a73-be76-ec78dfa2c4e3" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Sgw6GBLzX6sZs06ZcNRLBB6T20" />
+  <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.sparta.wla.models" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.sparta.wla" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.EmployeeTest.testDates">
+    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.wla.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.wla.models" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.EmployeeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTest.testDates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.wla.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.wla.models" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.EmployeeTest" />
+      <option name="METHOD_NAME" value="testDates" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTest.testFileExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.wla.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.wla.models" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.EmployeeTest" />
+      <option name="METHOD_NAME" value="testFileExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTest.testObjectIsPopulated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.wla.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.wla.models" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.EmployeeTest" />
+      <option name="METHOD_NAME" value="testObjectIsPopulated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTest.testReadCSVFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.wla.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.wla.models" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.EmployeeTest" />
+      <option name="METHOD_NAME" value="testReadCSVFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EmployeeTest.testDates" />
+        <item itemvalue="JUnit.EmployeeTest.testObjectIsPopulated" />
+        <item itemvalue="JUnit.EmployeeTest" />
+        <item itemvalue="JUnit.EmployeeTest.testReadCSVFile" />
+        <item itemvalue="JUnit.EmployeeTest.testFileExists" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57fa5804-85ce-4a73-be76-ec78dfa2c4e3" name="Default Changelist" comment="" />
+      <created>1571998369684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571998369684</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/sparta/wla/models/EmployeeTest.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
