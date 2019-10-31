@@ -1,53 +1,48 @@
 package com.sparta.wla.models;
 
-import com.sparta.wla.controllers.EmployeeManager;
 import org.junit.*;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Map;
-import java.util.Set;
 
 import static org.junit.Assert.*;
 
 public class EmployeeTest {
 
-    private EmployeeManager employeeManager;
     private Employee employee;
 
-    private static final String PATH = "resources/testFile.csv";
+    private static final String PATH = "resources/EmployeeRecords.csv";
 
-//    @Before
-//    public void setUp() throws FileNotFoundException {
-//
-//    }
-//
-//    @After
-//    public void tearDown(){
-//
-//    }
-//
-//    @Test
-//    public void testEmployeeObjectCreated(){
-//        employee = new Employee();
-//        assertNotNull(employee);
-//    }
-//
-//    @Test
-//    public void testFileExists(){
-//        File testFile = new File(PATH);
-//        assertTrue(testFile.isFile());
-//    }
-//
-//    @Test
-//    public void testObjectsArePopulated() {
-//        for(Employee e : employeeManager.getEmployeeMap().values()){
-//            assertNotNull(e);
-//        }
-//    }
-//
-//    @Test
-//    public void testPopulatingDatabase(){
-//        employeeManager.insertEmployeesToDatabase();
-//    }
+    @Before
+    public void setUp() {
+
+    }
+
+    @After
+    public void tearDown(){
+
+    }
+
+    @Test
+    public void testEmployeeObjectCreated(){
+        employee = new Employee();
+        assertNotNull(employee);
+    }
+
+    @Test
+    public void testEmployeeMapIsPopulated() throws FileNotFoundException {
+        CSVReader csvReader = new CSVReader();
+        csvReader.employeeReader();
+        for(Employee e : csvReader.getEmployeeMap().values()){
+            assertNotNull(e);
+        }
+    }
+
+    @Test
+    public void testDuplicatesAreStored() throws FileNotFoundException {
+        CSVReader csvReader = new CSVReader();
+        csvReader.employeeReader();
+        System.out.println(csvReader.getEmployeeMap().size());
+        System.out.println(csvReader.getDuplicateEmployeesMap().size());
+        assertNotNull(csvReader.getDuplicateEmployeesMap());
+    }
 }

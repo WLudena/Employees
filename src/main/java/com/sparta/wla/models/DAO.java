@@ -7,8 +7,9 @@ public class DAO {
 
     private final String QUERY = "INSERT INTO employees VALUES(?,?,?,?,?,?,?,?,?,?)";
     private final String URL = "jdbc:mysql://localhost/employees?user=root&password=Relojes1!";
+    private String givenURL;
 
-    private Logger log = Logger.getLogger(DAO.class.getName());
+    private Logger log = Logger.getLogger(DAO.class);
 
     public void runQuery(String id){
         try(Connection connection = DriverManager.getConnection(URL)){
@@ -36,5 +37,13 @@ public class DAO {
             log.error(e);
         }
         return false;
+    }
+
+    public String getGivenURL() {
+        return givenURL;
+    }
+
+    public void setGivenURL(String givenURL) {
+        this.givenURL = givenURL;
     }
 }

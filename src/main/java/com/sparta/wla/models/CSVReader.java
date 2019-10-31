@@ -6,58 +6,72 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.security.Key;
+import java.security.spec.ECField;
 import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class CSVReader {
 
     private static final String PATH = "resources/EmployeeRecords.csv";
     private String[] employee;
-    private Map<Integer, Employee> employeeDetailsList = new HashMap<>();
-    private Employee employeeObject;
+    private List<String> testList;
+
+    private Map<Integer, Employee> employeesDetails;
+    private Map<Integer, Employee> duplicateEmployees;
+
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yyyy");
 
-    private Logger log = Logger.getLogger(CSVReader.class.getName());
+    private Logger log = Logger.getLogger(CSVReader.class);
 
 
     public void employeeReader() throws FileNotFoundException {
         BufferedReader csvReader = new BufferedReader(new FileReader(PATH));
-        String row;
-        int counter = 1;
-        try{
-            while((row = csvReader.readLine()) != null){
-                if(counter == 1){
-                    counter++;
-                }
-                else{
-                    employee = row.split(",");
-                    addEmployeeToMap(employee);
-                }
-            }
-        }catch (IOException | ParseException e){
-            log.error(e);
+        employeesDetails = new HashMap<>();
+        duplicateEmployees = new HashMap<>();
+
+            csvReader.lines()
+                    .filter(item -> !item.equals("Emp ID,Name Prefix,First Name,Middle Initial,Last Name,Gender,E Mail,Date of Birth,Date of Joining,Salary"))
+                    .forEach(line -> createEmployeeObject(line));
+    }
+
+    public Map<Integer, Employee> getEmployeeMap() {
+        return employeesDetails;
+    }
+
+    public Map<Integer, Employee> getDuplicateEmployeesMap() {
+        return duplicateEmployees;
+    }
+
+    private void addEmployeeToMap(Employee employee){
+        if(employeesDetails.containsKey(employee.getEmpID())){
+            duplicateEmployees.put(employee.getEmpID(), employee);
+        }else{
+            employeesDetails.put(employee.getEmpID(), employee);
         }
     }
 
-    public void addEmployeeToMap(String[] employee) throws ParseException {
-        employeeObject = new Employee();
-        employeeObject.setEmpID(Integer.parseInt(employee[0]));
-        employeeObject.setNamePrefix(employee[1]);
-        employeeObject.setFirstName(employee[2]);
-        employeeObject.setMiddleInitial(employee[3].charAt(0));
-        employeeObject.setLastName(employee[4]);
-        employeeObject.setGender(employee[5].charAt(0));
-        employeeObject.setEmail(employee[6]);
-        employeeObject.setDateOfBirth(LocalDate.parse(employee[7],formatter));
-        employeeObject.setDateOfJoining(LocalDate.parse(employee[8],formatter));
-        employeeObject.setSalary(Integer.parseInt(employee[9]));
-        employeeDetailsList.put(employeeObject.getEmpID(),employeeObject);
-    }
+    private void createEmployeeObject(String line){
+        Employee employeeObject = new Employee();
+        String[] employeeDetails = line.split(",");
+        employeeObject.setEmpID(Integer.parseInt(employeeDetails[0]));
+        employeeObject.setNamePrefix(employeeDetails[1]);
+        employeeObject.setFirstName(employeeDetails[2]);
+        employeeObject.setMiddleInitial(employeeDetails[3].charAt(0));
+        employeeObject.setLastName(employeeDetails[4]);
+        employeeObject.setGender(employeeDetails[5].charAt(0));
+        employeeObject.setEmail(employeeDetails[6]);
+        employeeObject.setDateOfBirth(LocalDate.parse(employeeDetails[7], formatter));
+        employeeObject.setDateOfJoining(LocalDate.parse(employeeDetails[8], formatter));
+        employeeObject.setSalary(Integer.parseInt(employeeDetails[9]));
 
-    public Map<Integer, Employee> getEmployeeMap(){
-        return employeeDetailsList;
+        addEmployeeToMap(employeeObject);
     }
 }

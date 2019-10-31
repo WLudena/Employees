@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57fa5804-85ce-4a73-be76-ec78dfa2c4e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/logFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/mysql-connector-java-8.0.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/EmployeeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sparta/wla/models/DAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/controllers/LoggingManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/controllers/EmployeeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/controllers/EmployeeManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/controllers/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/controllers/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/EmployeeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/wla/StarterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/wla/models/DAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/wla/models/DAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/wla/models/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/wla/models/EmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/CSVReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/EmployeeDAO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/EmployeeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/EmployeeManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/Starter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/Starter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/models/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/wla/models/DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/wla/StarterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/wla/models/DAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sparta/wla/models/DAOTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/wla/models/EmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sparta/wla/models/EmployeeTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,20 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Starter">
-    <configuration name="Starter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sparta.wla.controllers.Starter" />
-      <module name="Employees" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sparta.wla.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EmployeeTest.testDuplicatesAreStored">
     <configuration name="DAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Employees" />
       <extension name="coverage">
@@ -106,7 +97,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTest.testObjectIsPopulated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Employees" />
       <extension name="coverage">
         <pattern>
@@ -116,13 +107,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.wla.models" />
       <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.EmployeeTest" />
-      <option name="METHOD_NAME" value="testObjectIsPopulated" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTest.testCorrectNumberOfEmployees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.wla.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.wla.models" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.EmployeeTest" />
+      <option name="METHOD_NAME" value="testCorrectNumberOfEmployees" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTest.testObjectsArePopulated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeTest.testDuplicatesAreStored" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Employees" />
       <extension name="coverage">
         <pattern>
@@ -132,13 +138,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.wla.models" />
       <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.EmployeeTest" />
-      <option name="METHOD_NAME" value="testObjectsArePopulated" />
+      <option name="METHOD_NAME" value="testDuplicatesAreStored" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTest.testPopulatingDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeTest.testEmployeeMapIsPopulated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Employees" />
       <extension name="coverage">
         <pattern>
@@ -148,7 +154,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.wla.models" />
       <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.EmployeeTest" />
-      <option name="METHOD_NAME" value="testPopulatingDatabase" />
+      <option name="METHOD_NAME" value="testEmployeeMapIsPopulated" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,10 +162,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Starter" />
-        <item itemvalue="JUnit.EmployeeTest.testPopulatingDatabase" />
-        <item itemvalue="JUnit.EmployeeTest.testObjectsArePopulated" />
-        <item itemvalue="JUnit.EmployeeTest.testObjectIsPopulated" />
+        <item itemvalue="JUnit.EmployeeTest.testDuplicatesAreStored" />
+        <item itemvalue="JUnit.EmployeeTest.testEmployeeMapIsPopulated" />
+        <item itemvalue="JUnit.EmployeeTest.testCorrectNumberOfEmployees" />
+        <item itemvalue="JUnit.EmployeeTest" />
         <item itemvalue="JUnit.DAOTest" />
       </list>
     </recent_temporary>
@@ -190,5 +196,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/wla/models/EmployeeDAO.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

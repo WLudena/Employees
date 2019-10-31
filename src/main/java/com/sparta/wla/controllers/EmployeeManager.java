@@ -4,11 +4,14 @@ import com.sparta.wla.models.CSVReader;
 import com.sparta.wla.models.EmployeeDAO;
 
 import java.io.FileNotFoundException;
+import org.apache.log4j.*;
 
 public class EmployeeManager{
 
     private CSVReader csvReader = new CSVReader();
     private EmployeeDAO employeeDAO = new EmployeeDAO();
+
+    private Logger log = Logger.getLogger(EmployeeManager.class);
 
     public void insertEmployeesToDatabase(){
         try{
@@ -16,7 +19,7 @@ public class EmployeeManager{
             employeeDAO.insertEmployeeQuery(csvReader.getEmployeeMap());
             System.out.println("DONE!");
         }catch(FileNotFoundException e){
-            e.printStackTrace();
+            log.error(e);
         }
 
     }
