@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 
 public class CSVReader {
 
-    private static final String PATH = "resources/EmployeeRecords.csv";
+    private static final String PATH = "resources/EmployeeRecordsLarge.csv";
     private String[] employee;
     private List<String> testList;
 
@@ -32,14 +32,16 @@ public class CSVReader {
     private Logger log = Logger.getLogger(CSVReader.class);
 
 
-    public void employeeReader() throws FileNotFoundException {
-        BufferedReader csvReader = new BufferedReader(new FileReader(PATH));
+    public void streamRecordsFromFile(String path) throws FileNotFoundException {
         employeesDetails = new HashMap<>();
         duplicateEmployees = new HashMap<>();
-
+        try(BufferedReader csvReader = new BufferedReader(new FileReader(path))){
+            csvReader.readLine(); // Gets rid of the first line containing headers
             csvReader.lines()
-                    .filter(item -> !item.equals("Emp ID,Name Prefix,First Name,Middle Initial,Last Name,Gender,E Mail,Date of Birth,Date of Joining,Salary"))
                     .forEach(line -> createEmployeeObject(line));
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
     public Map<Integer, Employee> getEmployeeMap() {

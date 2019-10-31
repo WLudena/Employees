@@ -13,9 +13,9 @@ public class EmployeeManager{
 
     private Logger log = Logger.getLogger(EmployeeManager.class);
 
-    public void insertEmployeesToDatabase(){
+    public void insertEmployeesToDatabase(String path){
         try{
-            csvReader.employeeReader();
+            csvReader.streamRecordsFromFile(path);
             employeeDAO.insertEmployeeQuery(csvReader.getEmployeeMap());
             System.out.println("DONE!");
         }catch(FileNotFoundException e){
