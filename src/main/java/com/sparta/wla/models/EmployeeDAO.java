@@ -13,17 +13,43 @@ public class EmployeeDAO {
     private DAO dao = new DAO();
     private Logger log = Logger.getLogger(EmployeeDAO.class);
 
-    public void insertEmployeeQuery(Map<Integer, Employee> employees) {
-        try (Connection connection = DriverManager.getConnection(dao.getURL())) {
+//    public void insertEmployeeQuery(Map<Integer, Employee> employees) {
+//        try (Connection connection = DriverManager.getConnection(dao.getURL())) {
+//            PreparedStatement statement = connection.prepareStatement(QUERY);
+//            for (Employee employee : employees.values()) {
+//                statement.setInt(1, employee.getEmpID());
+//                statement.setString(2, employee.getNamePrefix());
+//                statement.setString(3, employee.getFirstName());
+//                statement.setString(4, Character.toString(employee.getMiddleInitial()));
+//                statement.setString(5, employee.getLastName());
+//                statement.setString(6, Character.toString(employee.getGender()));
+//                statement.setString(7, employee.getEmail());
+//                statement.setDate(8, Date.valueOf(employee.getDateOfBirth()));
+//                statement.setDate(9, Date.valueOf(employee.getDateOfJoining()));
+//                statement.setInt(10, employee.getSalary());
+//                try {
+//                    statement.executeUpdate();
+//                } catch (SQLIntegrityConstraintViolationException ex) {
+//                    log.error(ex);
+//                }
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+    public void insertEmployeeQuery(Map<Integer, Employee> employees){
+        try(Connection connection = DriverManager.getConnection(dao.getURL())){
             PreparedStatement statement = connection.prepareStatement(QUERY);
-            employees.values().parallelStream().forEach(employee -> insertEmployee(statement,employee));
-        } catch (SQLException e) {
-            e.printStackTrace();
+            employees.values().spliterator().forEachRemaining(employee -> insertEmployee(statement,employee));
+
+        }catch(SQLException e){
+            log.error(e);
         }
     }
 
-    private void insertEmployee(PreparedStatement statement, Employee employee) {
-        try{
+    public void insertEmployee(PreparedStatement statement, Employee employee) {
+        try {
             statement.setInt(1, employee.getEmpID());
             statement.setString(2, employee.getNamePrefix());
             statement.setString(3, employee.getFirstName());
@@ -39,7 +65,7 @@ public class EmployeeDAO {
             } catch (SQLIntegrityConstraintViolationException ex) {
                 log.error(ex);
             }
-        }catch(SQLException e){
+        } catch (SQLException e) {
             log.error(e);
         }
     }
