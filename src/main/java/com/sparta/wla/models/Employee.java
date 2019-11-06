@@ -1,7 +1,6 @@
 package com.sparta.wla.models;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Employee {
 
@@ -15,12 +14,6 @@ public class Employee {
     private LocalDate dateOfBirth;
     private LocalDate dateOfJoining;
     private int salary;
-
-
-    public void setEmpID(int empID, String firstName) {
-        this.empID = empID;
-        this.firstName = firstName;
-    }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;

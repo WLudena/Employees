@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57fa5804-85ce-4a73-be76-ec78dfa2c4e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/TestingEmployeeDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/logFile" beforeDir="false" afterPath="$PROJECT_DIR$/resources/logFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/controllers/EmployeeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/controllers/EmployeeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/controllers/LoggingManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/controllers/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/controllers/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/EmployeeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/wla/models/DAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/wla/models/DAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/EmployeeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/EmployeeManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/LoggingManager.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/Starter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/wla/controllers/Starter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/models/CSVReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/wla/models/CSVReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/models/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/wla/models/DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/models/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/wla/models/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/wla/models/EmployeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/wla/models/EmployeeDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logFile" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/wla/models/DAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sparta/wla/models/DAOTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +72,11 @@
       <recent name="C:\Users\Wilson Ludena\IdeaProjects\Employees\resources" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="azqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqazqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq" />
+    </option>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -84,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTest.testCorrectNumberOfEmployees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DAOTest.testTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Employees" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +112,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.wla.models" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.EmployeeTest" />
-      <option name="METHOD_NAME" value="testCorrectNumberOfEmployees" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.wla.models.DAOTest" />
+      <option name="METHOD_NAME" value="testTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,10 +170,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Starter" />
-        <item itemvalue="JUnit.EmployeeTest.testDuplicatesAreStored" />
+        <item itemvalue="JUnit.DAOTest.testTime" />
         <item itemvalue="JUnit.EmployeeTest.testTimingCSVReader" />
+        <item itemvalue="JUnit.EmployeeTest.testDuplicatesAreStored" />
         <item itemvalue="JUnit.EmployeeTest.testEmployeeMapIsPopulated" />
-        <item itemvalue="JUnit.EmployeeTest.testCorrectNumberOfEmployees" />
       </list>
     </recent_temporary>
   </component>
@@ -186,16 +205,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

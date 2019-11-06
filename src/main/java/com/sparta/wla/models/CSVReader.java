@@ -3,26 +3,15 @@ package com.sparta.wla.models;
 import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.security.Key;
-import java.security.spec.ECField;
-import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
 
 public class CSVReader {
-
-    private static final String PATH = "resources/EmployeeRecordsLarge.csv";
-    private String[] employee;
-    private List<String> testList;
 
     private Map<Integer, Employee> employeesDetails;
     private Map<Integer, Employee> duplicateEmployees;
@@ -32,7 +21,7 @@ public class CSVReader {
     private Logger log = Logger.getLogger(CSVReader.class);
 
 
-    public void streamRecordsFromFile(String path) throws FileNotFoundException {
+    public void streamRecordsFromFile(String path) {
         employeesDetails = new HashMap<>();
         duplicateEmployees = new HashMap<>();
         try(BufferedReader csvReader = new BufferedReader(new FileReader(path))){
@@ -40,7 +29,7 @@ public class CSVReader {
             csvReader.lines()
                     .forEach(line -> createEmployeeObject(line));
         }catch(IOException e){
-            e.printStackTrace();
+            log.error(e);
         }
     }
 
