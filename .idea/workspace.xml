@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="57fa5804-85ce-4a73-be76-ec78dfa2c4e3" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="57fa5804-85ce-4a73-be76-ec78dfa2c4e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/CSVReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/wla/models/EmployeeDAO.java" afterDir="false" />
+    </list>
+>>>>>>> 18d53c0470040fd9ef92aae5dc4a5020c9900aff
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
